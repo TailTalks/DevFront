@@ -11,7 +11,7 @@ req.onreadystatechange = function () {
         else {
         }
         unassignedUsersList.splice(0, 1);
-        AssignAllUsers();
+        AssignAllUser();
     }
 };
 req.send(requestMain);
