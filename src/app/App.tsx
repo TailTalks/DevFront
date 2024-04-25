@@ -10,6 +10,10 @@ import ThemeSwitchDark from '../assets//ThemeSwitchDark.svg'
 import illustrationDark from '../assets/IllustrationDark.svg'
 import illustrationLight from '../assets/IllustrationLight.svg'
 import MissionCat from '../assets/MissionCat.jpg'
+import telegramCat from '../assets/telegramCat.jpg'
+import telegramDog from '../assets/telegramDog.jpg'
+import notesLabel from '../assets/notes.svg'
+import telegramLabel from '../assets/telegram.svg'
 
 // type Props = {
 //   onClick: () => void,
@@ -114,58 +118,92 @@ function App() {
 							<div className='mt-[30px] flex'>
 								<div className="w-96 min-w-96 h-[437px] bg-step-1 bg-center bg-cover flex flex-col justify-end">
 									<div className='pl-10 pr-8 pb-12'>
-										<div className='font-sans font-bold text-white text-[26px]'>
+										<h3 className='font-sans font-bold text-white text-[26px]'>
 											Шаг 1
-										</div>
-										<div className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
+										</h3>
+										<p className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
 											Загрузи фотографии своего питомца
-										</div>
+										</p>
 									</div>
 								</div>
 								<div className="w-96 min-w-96 h-[437px] bg-step-2 bg-center bg-cover flex flex-col justify-end">
 									<div className='pl-10 pr-8 pb-12'>
-										<div className='font-sans font-bold text-white text-[26px]'>
+										<h3 className='font-sans font-bold text-white text-[26px]'>
 											Шаг 2
-										</div>
-										<div className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
+										</h3>
+										<p className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
 										Делись публикациями со своими друзьями и собирай лайки
-										</div>
+										</p>
 									</div>
 								</div>
 								<div className="w-96 min-w-96 h-[437px] bg-step-3 bg-center bg-cover flex flex-col justify-end">
 									<div className='pl-10 pr-8 pb-12'>
-										<div className='font-sans font-bold text-white text-[26px]'>
+										<h3 className='font-sans font-bold text-white text-[26px]'>
 											Шаг 3
-										</div>
-										<div className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
+										</h3>
+										<p className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
 											Алгоритмы ИИ позволят легко преобразить фотографию питомца
-										</div>
+										</p>
 									</div>
 								</div>
 								<div className="w-96 min-w-96 h-[437px] bg-step-4 bg-center bg-cover flex flex-col justify-end">
 									<div className='pl-10 pr-8 pb-12'>
-										<div className='font-sans font-bold text-white text-[26px]'>
+										<h3 className='font-sans font-bold text-white text-[26px]'>
 											Шаг 4
-										</div>
-										<div className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
+										</h3>
+										<p className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
 										Алгоритмы ИИ продвинут фото вашего питомца
-										</div>
+										</p>
 									</div>
 								</div>
 								<div className="w-96 min-w-96 h-[437px] bg-step-5 bg-center bg-cover flex flex-col justify-end">
 									<div className='pl-10 pr-8 pb-12'>
-										<div className='font-sans font-bold text-white text-[26px]'>
+										<h3 className='font-sans font-bold text-white text-[26px]'>
 											Шаг 5
-										</div>
-										<div className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
+										</h3>
+										<p className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
 										Участвуй в фотоконкурсах и забирай награды
-										</div>
+										</p>
 									</div>
 								</div>
 							</div>
 						</div>
 
 				{/* end how it works */}
+
+				{/*TailTalks in telegram */}
+
+				<div className='mt-[140px] flex justify-between h-[666px] text-center gap-x-12'>
+					<div className='flex flex-col justify-between w-1/2 min-w-[590px] relative'>
+						<div className='pr-16'>
+							<h3 className='font-sans font-semibold dark:text-white text-[26px] text-black-50 mt-[72px]'>
+								Станьте частью уникального сообщества любителей животных Tail Talks!
+							</h3>
+							<p className='dark:text-[#F3F3F3F2] font-light font-Rubik Variable text-[20px] leading-[26px] pt-4 text-[#4D4D4D]'>
+								Не упусти шанс получить премиум-доступ к новой социальной сети для домашних животных.
+							</p>
+						</div>
+						<img src={telegramLabel} alt="" className='absolute left-[-36px] bottom-[280px]'/>
+						<img src={telegramCat} alt="" className='rounded-2xl w-[590px] h-[350px]'/>
+					</div>
+					<div className='flex flex-col justify-between w-1/2 min-w-[590px] relative'>
+						<div>
+							<img src={telegramDog} alt="" className='rounded-2xl w-[590px] h-[350px]'/>
+							<img src={notesLabel} alt="" className='absolute right-[-36px] top-[-36px]'/>
+							<h3 className='font-sans font-semibold dark:text-white text-[26px] text-black-50 mt-20'>
+								Сообщество Tail Talks в Telegram
+							</h3>
+							<p className='w-[560px] dark:text-[#F3F3F3F2] font-light font-Rubik Variable text-[20px] leading-[26px] pt-4 text-[#4D4D4D]'>
+							Подключайтесь к нашему Telegram-сообществу, чтобы вместе создавать лучшее место для общения любителей животных. Ваши идеи помогут нам расти и развиваться!
+							</p>
+							<button className='font-sans font-bold text-lg w-96 h-16 rounded-2xl bg-orangeGradient mt-10'>
+								Сообщество Telegram
+							</button>
+						</div>
+					</div>
+				</div>
+
+				{/*end TailTalks in telegram */}
 
       </div>
       {/* end container */}
