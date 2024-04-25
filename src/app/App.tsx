@@ -104,6 +104,69 @@ function App() {
         </div>
         {/* end mission */}
 
+
+				{/* how it works */}
+
+						<div className='w-full h-[568px] mt-36'>
+							<div className='h-16 font-sans text-[#000000] dark:text-white text-5xl font-medium'>
+								Как работает Tail Talks?
+							</div>
+							<div className='mt-[30px] flex'>
+								<div className="w-96 min-w-96 h-[437px] bg-step-1 bg-center bg-cover flex flex-col justify-end">
+									<div className='pl-10 pr-8 pb-12'>
+										<div className='font-sans font-bold text-white text-[26px]'>
+											Шаг 1
+										</div>
+										<div className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
+											Загрузи фотографии своего питомца
+										</div>
+									</div>
+								</div>
+								<div className="w-96 min-w-96 h-[437px] bg-step-2 bg-center bg-cover flex flex-col justify-end">
+									<div className='pl-10 pr-8 pb-12'>
+										<div className='font-sans font-bold text-white text-[26px]'>
+											Шаг 2
+										</div>
+										<div className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
+										Делись публикациями со своими друзьями и собирай лайки
+										</div>
+									</div>
+								</div>
+								<div className="w-96 min-w-96 h-[437px] bg-step-3 bg-center bg-cover flex flex-col justify-end">
+									<div className='pl-10 pr-8 pb-12'>
+										<div className='font-sans font-bold text-white text-[26px]'>
+											Шаг 3
+										</div>
+										<div className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
+											Алгоритмы ИИ позволят легко преобразить фотографию питомца
+										</div>
+									</div>
+								</div>
+								<div className="w-96 min-w-96 h-[437px] bg-step-4 bg-center bg-cover flex flex-col justify-end">
+									<div className='pl-10 pr-8 pb-12'>
+										<div className='font-sans font-bold text-white text-[26px]'>
+											Шаг 4
+										</div>
+										<div className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
+										Алгоритмы ИИ продвинут фото вашего питомца
+										</div>
+									</div>
+								</div>
+								<div className="w-96 min-w-96 h-[437px] bg-step-5 bg-center bg-cover flex flex-col justify-end">
+									<div className='pl-10 pr-8 pb-12'>
+										<div className='font-sans font-bold text-white text-[26px]'>
+											Шаг 5
+										</div>
+										<div className='text-[#F3F3F3F2] font-light font-Rubik Variable text-lg pt-4'>
+										Участвуй в фотоконкурсах и забирай награды
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+				{/* end how it works */}
+
       </div>
       {/* end container */}
 
