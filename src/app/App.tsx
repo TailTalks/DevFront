@@ -205,6 +205,43 @@ function App() {
 
 				{/*end TailTalks in telegram */}
 
+				{/*registation*/}
+
+				<div className='h-[770px] bg-[#F3F3F3] rounded-3xl bg-counterDog bg-left bg-no-repeat mt-[140px] mx-[-62px] flex justify-end'>
+					<div className='w-[805px] h-[500px] flex flex-col items-center mt-[134px] mb-[136px] pr-[110px]'>
+						<h3 className='font-sans text-[#000000] text-[34px] leading-[50px] font-medium'>
+						Отсчет времени до запуска нашей социальной сети 
+						<span className='bg-clip-text text-transparent bg-orangeGradient'> Tail Talks </span> начался!
+						</h3>
+						<p className='font-Rubik Variable font-light text-xl text-[#717171] mt-[25px] text-center px-10'>
+						Наше приложение находится в стадии активной разработки, и мы прилагаем все усилия, чтобы предоставить вам и вашим пушистым (и не только) друзьям лучший опыт общения
+						</p>
+						<div className='flex mt-9'>
+							<div className='flex flex-col justify-center items-center border-r border-[black]/20 px-10'>
+								<span className='font-Rubik Variable font-semibold italic text-[70px]'>133</span>
+								<span className='font-Rubik Variable font-light text-base'>дни</span>
+							</div>
+							<div className='flex flex-col justify-center items-center border-r border-[black]/20 px-10'>
+								<span className='font-Rubik Variable font-semibold italic text-[70px]'>01</span>
+								<span className='font-Rubik Variable font-light text-base'>часы</span>
+							</div>
+							<div className='flex flex-col justify-center items-center border-r border-[black]/20 px-10'>
+								<span className='font-Rubik Variable font-semibold italic text-[70px]'>59</span>
+								<span className='font-Rubik Variable font-light text-base'>минуты</span>
+							</div>
+							<div className='flex flex-col justify-center items-center px-10'>
+								<span className='font-Rubik Variable font-semibold italic text-[70px]'>23</span>
+								<span className='font-Rubik Variable font-light text-base'>секунды</span>
+							</div>
+						</div>
+						<button className='font-sans font-bold text-lg w-96 h-16 rounded-2xl bg-orangeGradient mt-10'>
+							Предварительная регистрация
+						</button>
+					</div>
+				</div>
+
+				{/*end registration*/}
+
       </div>
       {/* end container */}
 

@@ -21,6 +21,8 @@ module.exports = {
 					"linear-gradient(to bottom, rgba(25, 25, 25, 0), rgba(25, 25, 25, 0), rgba(25, 25, 25, 1)), url('assets/step5pic.jpg')",
 				'orangeGradient':
 					"linear-gradient(to bottom left, rgba(255, 174, 78, 1), rgba(255, 76, 140, 1))",
+				'counterDog':
+					"url('assets/counterDog.png')"
       },
       colors: {
         black: {
