@@ -196,9 +196,11 @@ function App() {
 							<p className='w-[560px] dark:text-[#F3F3F3F2] font-light font-Rubik Variable text-[20px] leading-[26px] pt-4 text-[#4D4D4D]'>
 							Подключайтесь к нашему Telegram-сообществу, чтобы вместе создавать лучшее место для общения любителей животных. Ваши идеи помогут нам расти и развиваться!
 							</p>
-							<button className='font-sans font-bold text-lg w-96 h-16 rounded-2xl bg-orangeGradient mt-10'>
-								Сообщество Telegram
-							</button>
+							<a href="https://t.me/tailtalkstg" target='_blank'>
+								<button className='font-sans font-bold text-lg w-96 h-16 rounded-2xl bg-orangeGradient mt-10'>
+									Сообщество Telegram
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>
