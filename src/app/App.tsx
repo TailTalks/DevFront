@@ -33,7 +33,7 @@ function App() {
     <div className='w-full h-96'>
 
       {/* container */}
-      <div className='container mx-auto px-4 3xl:px-10 w-[1220px] flex-col 3xl:w-screen'>
+      <div className='container mx-auto px-4 3xl:px-10 flex-col'>
 
         {/* header */}
         <div className='flex justify-between items-center h-14 mt-10 pt-2.5 pb-2.5'> 
@@ -47,11 +47,11 @@ function App() {
 
           {/* menu */}
           <div className='3xl:grow 3xl:px-96 3xl:text-3xl flex text-lg justify-between items-center w-[725px] h-7'>
-            <button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Наша миссия</button>
-            <button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Принцип работы</button>
-            <button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Дорожная карта</button>
-            <button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Сообщество</button>
-            <button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>FAQ</button>
+            <a href="#mission"><button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Наша миссия</button></a>
+            <a href="#how_it_works"><button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Принцип работы</button></a>
+            <a href=""><button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Дорожная карта</button></a>
+            <a href=""><button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Сообщество</button></a>
+            <a href=""><button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>FAQ</button></a>
           </div>
           {/* end menu */}
 
@@ -89,13 +89,13 @@ function App() {
             <img className='absolute top-52 right-5 cursor-pointer' src={Maps} alt='Maps'></img>
           </div> */}
 
-          <img className='relative 3xl:w-[900px] 3xl:h-[715px] w-[600px] h-[515px] 2xl:grow' src={theme ? illustrationDark : illustrationLight} alt='illustration'></img>
+          <img className='relative w-[435px] h-[375px] 3xl:w-[900px] 3xl:h-[715px] xl:w-[600px] xl:h-[515px] 2xl:grow' src={theme ? illustrationDark : illustrationLight} alt='illustration'></img>
 
         </div>
         {/* end main */}
 
         {/* mission */}
-        <div className='flex justify-between w-full h-[355px] 3xl:h-[550px] mt-36'>
+        <div id='mission' className='flex justify-between w-full h-[355px] 3xl:h-[550px] mt-36'>
           <div className='w-1/2 2xl:grow 3xl:pr-96'>
             <div className='w-[380px] 3xl:w-auto h-16 font-sans text-[#000000] dark:text-white text-5xl 3xl:text-7xl font-medium'>Наша миссия</div>
             <div className='w-full mt-7 3xl:mt-9 font-Rubik text-[#000000] dark:text-[#F3F3F3] text-xl 3xl:text-4xl font-light'>Это не просто социальная сеть, это место, где каждый питомец становится звездой, а каждый владелец находит друга.</div>
@@ -113,7 +113,7 @@ function App() {
 
 				{/* how it works */}
 
-						<div className='w-full h-[568px] mt-36'>
+						<div id='how_it_works' className='w-full h-[568px] mt-36'>
 							<div className='h-16 font-sans text-[#000000] dark:text-white text-5xl font-medium'>
 								Как работает Tail Talks?
 							</div>
@@ -175,27 +175,27 @@ function App() {
 
 				{/*TailTalks in telegram */}
 
-				<div className='mt-[140px] flex justify-between min-h-[666px] text-center gap-x-12'>
-					<div className='2xl:grow flex flex-col justify-between w-1/2 min-w-[590px] relative'>
-						<div className='pr-16 3xl:w-[790px]'>
-							<h3 className='font-sans font-semibold dark:text-white text-[26px] 3xl:text-4xl text-black-50 mt-[72px]'>
+				<div className='mt-[140px] flex justify-between text-center gap-x-12'>
+					<div className='2xl:grow flex flex-col justify-between w-1/2 min-w-[448px] xl:min-w-[590px] relative'>
+						<div className='xl:pr-16 3xl:w-[790px]'>
+							<h3 className='font-sans font-semibold dark:text-white text-2xl xl:text-[26px] 3xl:text-4xl text-black-50 mt-[72px]'>
 								Станьте частью уникального сообщества любителей животных Tail Talks!
 							</h3>
-							<p className='dark:text-[#F3F3F3F2] font-light font-Rubik Variable text-[20px] 3xl:text-3xl leading-[26px] pt-4 3xl:mt-10 text-[#4D4D4D]'>
+							<p className='dark:text-[#F3F3F3F2] font-light font-Rubik Variable text-lg xl:text-xl 3xl:text-3xl leading-[26px] pt-4 3xl:mt-10 text-[#4D4D4D]'>
 								Не упусти шанс получить премиум-доступ к новой социальной сети для домашних животных.
 							</p>
 						</div>
-						<img src={telegramLabel} alt="" className='absolute left-[-36px] bottom-[280px] 3xl:bottom-[430px]'/>
-						<img src={telegramCat} alt="" className='rounded-2xl w-[590px] h-[350px] 3xl:w-[790px] 3xl:h-[500px] 3xl:mt-10'/>
+						<img src={telegramLabel} alt="" className='absolute w-[52px] h-[52px] xl:w-[99px] xl:h-[99px] left-[-25px] bottom-[235px] xl:left-[-36px] xl:bottom-[280px] 3xl:bottom-[430px]'/>
+						<img src={telegramCat} alt="" className='rounded-2xl w-[448px] h-[270px] xl:w-[590px] xl:h-[350px] 3xl:w-[790px] 3xl:h-[500px] 3xl:mt-10'/>
 					</div>
-					<div className='2xl:grow flex flex-col justify-between items-center w-1/2 min-w-[590px] relative'>
-							<img src={telegramDog} alt="" className='rounded-2xl w-[590px] h-[350px] 3xl:w-[790px] 3xl:h-[500px] 3xl:mb-10'/>
-							<img src={notesLabel} alt="" className='absolute right-[-36px] 3xl:right-[180px] 4xl:right-[340px] top-[-36px]'/>
+					<div className='2xl:grow flex flex-col justify-between items-center w-1/2 min-w-[448px] xl:min-w-[590px] relative'>
+							<img src={telegramDog} alt="" className='rounded-2xl w-[448px] h-[270px] xl:w-[590px] xl:h-[350px] 3xl:w-[790px] 3xl:h-[500px] 3xl:mb-10'/>
+							<img src={notesLabel} alt="" className='absolute w-[52px] h-[52px] xl:w-[99px] xl:h-[99px] right-[-10px] 3xl:right-[180px] 4xl:right-[340px] top-[-20px] xl:top-[-36px]'/>
 							<div className='3xl:w-[790px]'>
-								<h3 className='font-sans font-semibold dark:text-white text-[26px] 3xl:text-4xl text-black-50 mt-20'>
+								<h3 className='font-sans font-semibold dark:text-white text-2xl xl:text-[26px] 3xl:text-4xl text-black-50 mt-20'>
 									Сообщество Tail Talks в Telegram
 								</h3>
-								<p className='w-[560px] 3xl:w-auto dark:text-[#F3F3F3F2] font-light font-Rubik Variable text-[20px] 3xl:text-3xl leading-[26px] pt-4 text-[#4D4D4D]'>
+								<p className=' dark:text-[#F3F3F3F2] font-light font-Rubik Variable text-lg xl:text-xl 3xl:text-3xl leading-[26px] pt-4 text-[#4D4D4D]'>
 								Подключайтесь к нашему Telegram-сообществу, чтобы вместе создавать лучшее место для общения любителей животных. Ваши идеи помогут нам расти и развиваться!
 								</p>
 								<a href="https://t.me/tailtalkstg" target='_blank'>
