@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '@fontsource-variable/rubik';
+import './App.css'
 import ThemeSwitchLight from '../assets/ThemeSwitchLight.svg'
 import ThemeSwitchDark from '../assets//ThemeSwitchDark.svg'
 // import Love from '../assets/Love.svg'
@@ -110,15 +111,18 @@ function App() {
         </div>
         {/* end mission */}
 
+				{/* end container	 */}
+				</div>
 
 				{/* how it works */}
 
 						<div id='how_it_works' className='w-full h-[568px] mt-36'>
-							<div className='h-16 font-sans text-[#000000] dark:text-white text-5xl font-medium'>
+							<div className='container mx-auto px-4 3xl:px-10 h-16 font-sans text-[#000000] dark:text-white text-5xl font-medium'>
 								Как работает Tail Talks?
 							</div>
-							<div className='mt-[30px] flex overflow-hidden'>
-								<div className="2xl:grow w-96 min-w-96 h-[437px] bg-step-1 bg-center bg-cover flex flex-col justify-end">
+							<div className={theme? 'mx-auto w-[95%] scroll-container scroll-container-dark mt-[30px] pb-8 flex overflow-x-auto'
+							: 'mx-auto w-[95%] scroll-container scroll-container-light mt-[30px] pb-8 flex overflow-x-auto'}>
+								<div className="rounded-l-xl 2xl:grow w-96 min-w-96 h-[437px] bg-step-1 bg-center bg-cover flex flex-col justify-end">
 									<div className='pl-10 pr-8 pb-12'>
 										<h3 className='font-sans font-bold text-white text-[26px]'>
 											Шаг 1
@@ -158,7 +162,7 @@ function App() {
 										</p>
 									</div>
 								</div>
-								<div className="2xl:grow w-96 min-w-96 h-[437px] bg-step-5 bg-center bg-cover flex flex-col justify-end">
+								<div className="rounded-r-xl 2xl:grow w-96 min-w-96 h-[437px] bg-step-5 bg-center bg-cover flex flex-col justify-end">
 									<div className='pl-10 pr-8 pb-12'>
 										<h3 className='font-sans font-bold text-white text-[26px]'>
 											Шаг 5
@@ -172,6 +176,8 @@ function App() {
 						</div>
 
 				{/* end how it works */}
+
+				<div className='container mx-auto px-4 3xl:px-10 flex-col'>
 
 				{/*TailTalks in telegram */}
 
