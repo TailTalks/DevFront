@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '@fontsource-variable/rubik';
 import './App.css'
+import PreRegistration from '../components/PreRegistration/PreRegistration';
 import ThemeSwitchLight from '../assets/ThemeSwitchLight.svg'
 import ThemeSwitchDark from '../assets//ThemeSwitchDark.svg'
 // import Love from '../assets/Love.svg'
@@ -21,9 +22,11 @@ import telegramLabel from '../assets/telegram.svg'
 //   themeHandler: (event: React.FormEvent<HTMLFormElement>) => void
 // }
 
+
 function App() {
 
   const [theme, setTheme] = useState(true);
+	const [preRegistration, setPreRegistration] = useState(false);
 
   const themeHandler = () => {
     setTheme(!theme)
@@ -246,11 +249,12 @@ function App() {
 								<span className='font-Rubik Variable font-light text-base'>секунды</span>
 							</div>
 						</div>
-						<button className='font-sans font-bold text-lg w-96 h-16 rounded-2xl bg-orangeGradient mt-10'>
+						<button onClick={() => setPreRegistration(true)} className='font-sans font-bold text-lg w-96 h-16 rounded-2xl bg-orangeGradient mt-10'>
 							Предварительная регистрация
 						</button>
 					</div>
 				</div>
+	
 
 				{/*end registration*/}
 			{/* container */}
