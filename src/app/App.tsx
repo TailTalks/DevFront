@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '@fontsource-variable/rubik';
 import './App.css'
+import Modal from 'react-modal';
+import PreRegistration from '../components/PreRegistration/PreRegistration';
 import ThemeSwitchLight from '../assets/ThemeSwitchLight.svg'
 import ThemeSwitchDark from '../assets//ThemeSwitchDark.svg'
 // import Love from '../assets/Love.svg'
@@ -21,9 +23,21 @@ import telegramLabel from '../assets/telegram.svg'
 //   themeHandler: (event: React.FormEvent<HTMLFormElement>) => void
 // }
 
+Modal.setAppElement('#root');
+
+
 function App() {
 
   const [theme, setTheme] = useState(true);
+	const [preRegistration, setPreRegistration] = useState(false);
+
+	const openPreRegistration = () => {
+		setPreRegistration(true);
+	};
+	
+	const closePreRegistration = () => {
+		setPreRegistration(false);
+	};
 
   const themeHandler = () => {
     setTheme(!theme)
@@ -246,11 +260,16 @@ function App() {
 								<span className='font-Rubik Variable font-light text-base'>секунды</span>
 							</div>
 						</div>
-						<button className='font-sans font-bold text-lg w-96 h-16 rounded-2xl bg-orangeGradient mt-10'>
+						<button onClick={openPreRegistration} className='font-sans font-bold text-lg w-96 h-16 rounded-2xl bg-orangeGradient mt-10'>
 							Предварительная регистрация
 						</button>
 					</div>
 				</div>
+
+				<Modal className='bg-slate-200/50 w-full h-full flex justify-center items-center' isOpen={preRegistration} onRequestClose={closePreRegistration}>
+					<PreRegistration closeModal={closePreRegistration} />
+				</Modal>
+				
 
 				{/*end registration*/}
 			{/* container */}
