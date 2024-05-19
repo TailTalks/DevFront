@@ -28,6 +28,7 @@ import roadmapPawDark from '../assets/roadmap-paw-dark.svg'
 import roadmapPawLight from '../assets/roadmap-paw-light.svg'
 import roadmapEllipsesDark from '../assets/roadmap-ellipses-dark.svg'
 import roadmapEllipsesLight from '../assets/roadmap-ellipses-light.svg'
+import NFTDog from '../assets/NFT-dog.jpg'
 
 // type Props = {
 //   onClick: () => void,
@@ -474,7 +475,51 @@ function App() {
 				
 				{/* end road map */}
 
-				<div className='mt-10 h-1'>    </div>
+				{/* container */}
+
+				<div className='container mx-auto px-4 3xl:px-10'>
+						{/* NFT */}
+					<div className='mt-[140px] flex justify-around'>
+						<div className='mr-[55px] xl:mr-[130px]'>
+							<p className='font-Rubic variable font-semibold text-lg bg-clip-text text-transparent bg-bread'>NFT</p>
+							<div className='max-w-[525px]'>
+								<h2 className='font-sans font-medium text-[30px] xl:text-[34px] dark:text-white text-[#000000CC]'>
+								Ваш питомец заслуживает быть в блокчейне!
+								</h2>
+								<p className='font-Rubic variable font-light text-[18px] xl:text-xl dark:text-white text-[#4D4D4D] mt-[20px]'>
+								Зафиксируйте самые яркие моменты жизни вашего питомца в цифровой эпохе, превратив его фото в NFT:
+								</p>
+							</div>
+							<div className='mt-[30px] xl:mt-10 max-w-[605px]'>
+								<p className='font-Rubic variable font-light text-[18px] xl:text-xl dark:text-white text-[#4D4D4D] mt-5 xl:mt-[30px]'>
+									<span className='bg-clip-text text-transparent bg-bread text-xl xl:text-2xl font-medium'>Сохранность: </span>  
+									Ваши фото будут храниться безопасно всегда
+								</p>
+								<p className='font-Rubic variable font-light text-[18px] xl:text-xl dark:text-white text-[#4D4D4D] mt-5 xl:mt-[30px]'>
+									<span className='bg-clip-text text-transparent bg-bread text-xl xl:text-2xl font-medium'>Уникальность: </span>  
+									Каждый NFT является подтверждением оригинальности и уникальности вашего питомца
+								</p>
+								<p className='font-Rubic variable font-light text-[18px] xl:text-xl dark:text-white text-[#4D4D4D] mt-5 xl:mt-[30px]'>
+									<span className='bg-clip-text text-transparent bg-bread text-xl xl:text-2xl font-medium'>Эксклюзивность: </span>  
+									Выделяйтесь среди других, имея NFT, который никто не сможет скопировать
+								</p>
+								<p className='font-Rubic variable font-light text-[18px] xl:text-xl dark:text-white text-[#4D4D4D] mt-5 xl:mt-[30px]'>
+									<span className='bg-clip-text text-transparent bg-bread text-xl xl:text-2xl font-medium'>Поддержка сообщества: </span>  
+									Станьте частью растущего сообщества домашних животных и NFT
+								</p>
+							</div>
+							<a href="https://t.me/tailtalkstg" target='_blank'>
+								<button className='font-sans font-bold text-lg 3xl:text-2xl w-96 h-16 3xl:w-96 3xl:h-24 rounded-2xl bg-bread mt-10'>
+									Сообщество Telegram
+								</button>
+							</a>
+						</div>
+						<img src={NFTDog} alt="" className='w-[368px] h-[524px] xl:w-[485px] xl:h-[659px] rounded-xl'/>
+					</div>
+					{/* end NFT */}
+
+				</div>
+				{/* end container */}
 
     </div>
   );
