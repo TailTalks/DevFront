@@ -29,6 +29,15 @@
   border: 3px solid #000000CC; /* Оформление границ бегунка */
 	}
 
+.scroll-container-light-bread::-webkit-scrollbar-track {
+	background: rgba(160, 160, 160, 1)
+}
+
+.scroll-container-light-bread::-webkit-scrollbar-thumb {
+	background: linear-gradient(to left, rgba(255, 174, 78, 1), rgba(255, 76, 140, 1)); /* Цвет бегунка */
+  border-radius: 20px; /* Округление бегунка */
+	}
+
 /*
 .scroll-container {
 	scrollbar-color: #FFFFFF #FFFFFF40;      
