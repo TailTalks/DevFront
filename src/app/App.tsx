@@ -17,6 +17,17 @@ import telegramCat from '../assets/telegramCat.jpg'
 import telegramDog from '../assets/telegramDog.jpg'
 import notesLabel from '../assets/notes.svg'
 import telegramLabel from '../assets/telegram.svg'
+import roadmapStarBread from '../assets/roadmap-star-bread.svg'
+import roadmapStarBreadSm from '../assets/roadmap-star-bread-sm.svg'
+import roadmapStarGrayMd from '../assets/roadmap-star-gray-md.svg'
+import roadmapStarGraySm from '../assets/roadmap-star-gray-sm.svg'
+import roadmapStarWhiteSm from '../assets/roadmap-star-white-sm.svg'
+import roadmapSunFull from '../assets/roadmap-sun-full.svg'
+import roadmapSunThin from '../assets/roadmap-sun-thin.svg'
+import roadmapPawDark from '../assets/roadmap-paw-dark.svg'
+import roadmapPawLight from '../assets/roadmap-paw-light.svg'
+import roadmapEllipsesDark from '../assets/roadmap-ellipses-dark.svg'
+import roadmapEllipsesLight from '../assets/roadmap-ellipses-light.svg'
 
 // type Props = {
 //   onClick: () => void,
@@ -219,7 +230,7 @@ function App() {
 								Подключайтесь к нашему Telegram-сообществу, чтобы вместе создавать лучшее место для общения любителей животных. Ваши идеи помогут нам расти и развиваться!
 								</p>
 								<a href="https://t.me/tailtalkstg" target='_blank'>
-									<button className='font-sans font-bold text-lg 3xl:text-2xl w-96 h-16 3xl:w-96 3xl:h-24 rounded-2xl bg-orangeGradient mt-10'>
+									<button className='font-sans font-bold text-lg 3xl:text-2xl w-96 h-16 3xl:w-96 3xl:h-24 rounded-2xl bg-bread mt-10'>
 										Сообщество Telegram
 									</button>
 								</a>
@@ -237,7 +248,7 @@ function App() {
 					<div className='w-[530px] xl:w-[670px] h-[500px] flex flex-col items-center mt-[70px] xl:mt-[134px] mb-[136px] mr-[90px] xl:mr-[110px]'>
 						<h3 className='font-sans text-[#000000] text-2xl xl:text-[34px] text-center leading-[36px] xl:leading-[50px] font-medium'>
 						Отсчет времени до запуска нашей социальной сети 
-						<span className='bg-clip-text text-transparent bg-orangeGradient'> Tail Talks </span> начался!
+						<span className='bg-clip-text text-transparent bg-bread'> Tail Talks </span> начался!
 						</h3>
 						<p className='font-Rubik Variable font-light text-lg xl:text-xl text-[#717171] mt-[25px] text-center xl:px-10'>
 						Наше приложение находится в стадии активной разработки, и мы прилагаем все усилия, чтобы предоставить вам и вашим пушистым (и не только) друзьям лучший опыт общения
@@ -260,7 +271,7 @@ function App() {
 								<span className='font-Rubik Variable font-light text-base'>секунды</span>
 							</div>
 						</div>
-						<button onClick={openPreRegistration} className='font-sans font-bold text-lg w-96 h-16 rounded-2xl bg-orangeGradient mt-10'>
+						<button onClick={openPreRegistration} className='font-sans font-bold text-lg w-96 h-16 rounded-2xl bg-bread mt-10'>
 							Предварительная регистрация
 						</button>
 					</div>
@@ -272,11 +283,198 @@ function App() {
 				
 
 				{/*end registration*/}
-			{/* container */}
-			<div>
 
-      </div>
-      {/* end container */}
+				{/* road map */}
+
+				<div className={theme? 'mt-[140px] xl:bg-roadmap-stars relative' : 'mt-[140px] relative'}>
+					<img className='absolute left-[100px] top-[-15px]' src={theme? roadmapStarGraySm : roadmapStarBreadSm} alt="" />
+					<img className='absolute left-[150px] top-[0px]' src={roadmapStarBread} alt="" />
+					{theme && <img className='absolute left-[1100px] top-[-20px]' src={roadmapStarWhiteSm} alt="" />}
+					{theme && <img className='absolute left-[1265px] top-[55px]' src={roadmapStarGrayMd} alt="" />}
+					{!theme && <img className='absolute left-[1050px] top-[-40px] w-[78px] h-[78px]' src={roadmapSunFull} alt="" />}
+					{!theme && <img className='absolute left-[1200px] top-[30px] w-[95px] h-[95px]' src={roadmapSunFull} alt="" />}
+					{!theme && <img className='absolute left-[1170px] top-[-80px] w-[90px] h-[90px]' src={roadmapSunThin} alt="" />}
+					<div className='container mx-auto px-4'>
+						<h3 className='font-sans font-medium dark:text-white text-[34px] text-center'>
+						Дорожная карта Tail Talks 2024!
+						</h3>
+						<p className='font-Rubik Variable font-light text-center dark:text-[#F3F3F3] text-[20px] mt-[30px]'>
+						Отслеживайте развитие нашей социальной сети для животных
+						</p>
+					</div>
+					 <div className={theme? 
+					 'overflow-x-auto scroll-container scroll-container-dark w-[90%] mx-auto' 
+						: 'overflow-x-auto scroll-container scroll-container-light-bread w-[90%] mx-auto'}>
+						<div className='w-[1884px] h-[700px] mt-[50px] mx-auto relative pl-7'>
+						<img className='absolute left-[0px] bottom-[100px]' src={theme? roadmapPawDark : roadmapPawLight} alt="" />
+						<img className='absolute left-[720px] bottom-[510px] z-10' src={theme? roadmapEllipsesDark : roadmapEllipsesLight} alt="" />
+							{/* progress line */}
+							<div className='relative w-[1320px] h-[3px] ml-[150px] mt-[13px] bg-gradient-to-r from-[#FFAE4E] from-10% dark:via-white dark:via-30% via-[#A0A0A0] via-30% dark:to-white to-[#A0A0A0]'>
+								<div className='absolute left-0 top-0 w-[26px] h-[26px] rounded-full bg-bread translate-x-[-50%] translate-y-[-50%]'></div>
+								<div className='absolute left-[33%] top-0 w-[26px] h-[26px] rounded-full dark:bg-white bg-[#A0A0A0] translate-x-[-50%] translate-y-[-50%]'></div>
+								<div className='absolute left-[67%] top-0 w-[26px] h-[26px] rounded-full dark:bg-white bg-[#A0A0A0] translate-x-[-50%] translate-y-[-50%]'></div>
+								<div className='absolute left-[100%] top-0 w-[26px] h-[26px] rounded-full dark:bg-white bg-[#A0A0A0] translate-x-[-50%] translate-y-[-50%]'></div>
+							</div>
+							{/* end progress line */}
+							<div className='flex items-start h-[609px]'>
+								<div className='flex flex-col justify-center items-center mr-[90px]'>
+									<p className='font-sans font-semibold text-[20px] dark:text-white text-center mt-[33px]'>
+									Первый квартал
+									</p>
+									<div className='w-[346px] border-2 dark:border-white border-[#000000] rounded-2xl mt-[40px] dark:text-white flex flex-col justify-center items-center'>
+										<div className='m-10'>
+											<ul className='font-Rubik Variable font-medium text-lg'>
+											Исследование рынка
+												<li className='font-light text-base list-disc mt-[15px]'>
+												анализ конкурентов
+												</li>
+												<li className='font-light text-base list-disc'>
+												определение целевой аудитории
+												</li>
+												<li className='font-light text-base list-disc'>
+												изучение потребностей рынка
+												</li>
+											</ul>
+											<ul className='font-Rubik Variable font-medium text-lg mt-[35px]'>
+											Разработка концепции
+												<li className='font-light text-base list-disc mt-[15px]'>
+												определение функциональности
+												</li>
+												<li className='font-light text-base list-disc'>
+												разработка бизнес-модели
+												</li>
+												<li className='font-light text-base list-disc'>
+												создание прототипа
+												</li>
+											</ul>
+											<ul className='font-Rubik Variable font-medium text-lg mt-[35px]'>
+											Формирование команды
+												<li className='font-light text-base list-disc mt-[15px] text-wrap'>
+												поиск и привлечение опытных специалистов
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div className='flex flex-col justify-center items-center mr-[90px]'>
+									<p className='font-sans font-semibold text-[20px] dark:text-white text-center mt-[33px]'>
+									Второй квартал
+									</p>
+									<div className='w-[346px] border-2 dark:border-white border-[#000000] rounded-2xl mt-[40px] dark:text-white flex flex-col justify-center items-center'>
+										<div className='m-10'>
+											<ul className='font-Rubik Variable font-medium text-lg'>
+											Разработка MVP
+												<li className='font-light text-base list-disc mt-[15px]'>
+												запуск минимально жизнеспособного продукта
+												</li>
+												<li className='font-light text-base list-disc'>
+												тестирование
+												</li>
+												<li className='font-light text-base list-disc'>
+												доработка функциональности
+												</li>
+												<li className='font-light text-base list-disc'>
+												получение обратной связи от пользователей
+												</li>
+											</ul>
+											<ul className='font-Rubik Variable font-medium text-lg mt-[35px]'>
+											Привлечение инвестиций
+												<li className='font-light text-base list-disc mt-[15px]'>
+												подготовка инвестиционного предложения
+												</li>
+												<li className='font-light text-base list-disc'>
+												поиск инвесторов
+												</li>
+											</ul>
+											<ul className='font-Rubik Variable font-medium text-lg mt-[35px]'>
+											Маркетинг
+												<li className='font-light text-base list-disc mt-[15px] text-wrap'>
+												запуск рекламной кампании
+												</li>
+												<li className='font-light text-base list-disc text-wrap'>
+												формирование сообщества
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div className='flex flex-col justify-center items-center mr-[90px]'>
+									<p className='font-sans font-semibold text-[20px] dark:text-white text-center mt-[33px]'>
+									Третий квартал
+									</p>
+									<div className='w-[346px] border-2 dark:border-white border-[#000000] rounded-2xl mt-[40px] dark:text-white flex flex-col justify-center items-center'>
+										<div className='m-10'>
+											<ul className='font-Rubik Variable font-medium text-lg'>
+											Развитие платформы
+												<li className='font-light text-base list-disc mt-[15px]'>
+												добавление новых функций
+												</li>
+												<li className='font-light text-base list-disc'>
+												расширение возможностей
+												</li>
+												<li className='font-light text-base list-disc'>
+												улучшение пользовательского опыта
+												</li>
+											</ul>
+											<ul className='font-Rubik Variable font-medium text-lg mt-[35px]'>
+											Привлечение пользователей
+												<li className='font-light text-base list-disc mt-[15px]'>
+												проведение конкурсов и акций
+												</li>
+												<li className='font-light text-base list-disc'>
+												сотрудничество с инфлюенсерами
+												</li>
+											</ul>
+											<ul className='font-Rubik Variable font-medium text-lg mt-[35px]'>
+											Партнерство
+												<li className='font-light text-base list-disc mt-[15px] text-wrap'>
+												с другими компаниями в сфере Web3
+												</li>
+												<li className='font-light text-base list-disc text-wrap'>
+												с вет клиниками, зоомагазинами
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div className='flex flex-col justify-center items-center mr-[90px]'>
+									<p className='font-sans font-semibold text-[20px] dark:text-white text-center mt-[33px]'>
+									Четвертый квартал
+									</p>
+									<div className='w-[346px] border-2 dark:border-white border-[#000000] rounded-2xl mt-[40px] dark:text-white flex flex-col justify-center items-center'>
+										<div className='m-10'>
+											<ul className='font-Rubik Variable font-medium text-lg text-center'>
+											Выход на новые рынки
+												<li className='font-light text-base text-left list-disc mt-[15px]'>
+												адаптация платформы для разных стран
+												</li>
+												<li className='font-light text-base text-left list-disc'>
+												перевод интерфейса на другие языки
+												</li>
+											</ul>
+											<ul className='font-Rubik Variable font-medium text-lg text-center mt-[35px]'>
+											Масштабирование
+												<li className='font-light text-base text-left list-disc mt-[15px]'>
+												увеличение числа пользователей
+												</li>
+												<li className='font-light text-base text-left list-disc'>
+												расширение команды
+												</li>
+												<li className='font-light text-base text-left list-disc'>
+												привлечение дополнительных инвестиций
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					 </div>
+				</div>
+				
+				{/* end road map */}
+
+				<div className='mt-10 h-1'>    </div>
 
     </div>
   );

@@ -22,13 +22,13 @@ const PreRegistration: React.FC<PreRegistrationProps> = ({closeModal}) => {
 					</p>
 				</div>
 				<form action="" className='w-[409px] h-[212px] flex flex-col'>
-					<div className='w-[409px] h-[59px] bg-orangeGradient rounded-2xl p-1 mb-[15px]'>
+					<div className='w-[409px] h-[59px] bg-bread rounded-2xl p-1 mb-[15px]'>
 						<input type="text" placeholder='E-mail' className='w-full h-full bg-clip-border rounded-xl focus:outline-none py-[20px] px-[25px]'/>
 					</div>
-					<div className='w-[409px] h-[59px] bg-orangeGradient rounded-2xl p-1 mb-[15px]'>
+					<div className='w-[409px] h-[59px] bg-bread rounded-2xl p-1 mb-[15px]'>
 						<input type="text" placeholder='Логин (необязательно)' className='w-full h-full bg-clip-border rounded-xl focus:outline-none py-[20px] px-[25px]'/>
 					</div>
-					<button className='font-sans font-bold text-lg w-[409px] h-[59px] rounded-2xl bg-orangeGradient'>
+					<button className='font-sans font-bold text-lg w-[409px] h-[59px] rounded-2xl bg-bread'>
 						Отправить
 					</button>
 				</form>
