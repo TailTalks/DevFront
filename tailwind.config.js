@@ -47,6 +47,7 @@ module.exports = {
       colors: {
         black: {
           50: "#191919",
+					80: "#000000CC"
         },
       },
     },
