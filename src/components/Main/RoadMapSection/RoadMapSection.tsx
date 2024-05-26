@@ -18,7 +18,7 @@ interface RoadMapSectionProps {
 
 const RoadMapSection: React.FC<RoadMapSectionProps> = ({theme}) => {
 	return (
-		<div className={theme? 'mt-[140px] xl:bg-roadmap-stars relative' : 'mt-[140px] relative'}>
+		<div id='roadmap' className={theme? 'mt-[140px] xl:bg-roadmap-stars relative' : 'mt-[140px] relative'}>
 					<img className='absolute left-[100px] top-[-15px]' src={theme? roadmapStarGraySm : roadmapStarBreadSm} alt="" />
 					<img className='absolute left-[150px] top-[0px]' src={roadmapStarBread} alt="" />
 					{theme && <img className='absolute left-[1100px] top-[-20px]' src={roadmapStarWhiteSm} alt="" />}

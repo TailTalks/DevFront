@@ -12,7 +12,7 @@ interface CommunitySectionProps {
 
 const CommunitySection: React.FC<CommunitySectionProps> = () => {
 	return (
-		<div className='mt-[140px] flex justify-between text-center gap-x-12'>
+		<div id='community' className='mt-[140px] flex justify-between text-center gap-x-12'>
 					<div className='2xl:grow flex flex-col justify-between w-1/2 min-w-[448px] xl:min-w-[590px] relative'>
 						<div className='xl:pr-16 3xl:w-[790px]'>
 							<h3 className='font-sans font-semibold dark:text-white text-2xl xl:text-[26px] 3xl:text-4xl text-black-50 mt-[72px]'>
