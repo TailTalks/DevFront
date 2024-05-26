@@ -21,11 +21,11 @@ const RoadMapSection: React.FC<RoadMapSectionProps> = ({theme}) => {
 		<div id='roadmap' className={theme? 'mt-[140px] xl:bg-roadmap-stars relative' : 'mt-[140px] relative'}>
 					<img className='absolute left-[100px] top-[-15px]' src={theme? roadmapStarGraySm : roadmapStarBreadSm} alt="" />
 					<img className='absolute left-[150px] top-[0px]' src={roadmapStarBread} alt="" />
-					{theme && <img className='absolute left-[1100px] top-[-20px]' src={roadmapStarWhiteSm} alt="" />}
-					{theme && <img className='absolute left-[1265px] top-[55px]' src={roadmapStarGrayMd} alt="" />}
-					{!theme && <img className='absolute left-[1050px] top-[-40px] w-[78px] h-[78px]' src={roadmapSunFull} alt="" />}
-					{!theme && <img className='absolute left-[1200px] top-[30px] w-[95px] h-[95px]' src={roadmapSunFull} alt="" />}
-					{!theme && <img className='absolute left-[1170px] top-[-80px] w-[90px] h-[90px]' src={roadmapSunThin} alt="" />}
+					{theme && <img className='absolute left-[870px] xl:left-[1100px] top-[-20px]' src={roadmapStarWhiteSm} alt="" />}
+					{theme && <img className='absolute left-[1055px] xl:left-[1265px] top-[55px]' src={roadmapStarGrayMd} alt="" />}
+					{!theme && <img className='absolute left-[905px] xl:left-[1050px] top-[-40px] w-[78px] h-[78px]' src={roadmapSunFull} alt="" />}
+					{!theme && <img className='absolute left-[1035px] xl:left-[1200px] top-[30px] w-[95px] h-[95px]' src={roadmapSunFull} alt="" />}
+					{!theme && <img className='absolute left-[1000px] xl:left-[1170px] top-[-80px] w-[90px] h-[90px]' src={roadmapSunThin} alt="" />}
 					<div className='container mx-auto px-4'>
 						<h3 className='font-sans font-medium dark:text-white text-[34px] text-center'>
 						Дорожная карта Tail Talks 2024!
