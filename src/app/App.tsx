@@ -20,6 +20,7 @@ import RoadMapSection from '../components/Main/RoadMapSection/RoadMapSection';
 import CommunitySection from '../components/Main/CommunitySection/CommunitySection';
 import HowItWorksSection from '../components/Main/HowItWorksSection/HowItWorksSection';
 import ButtonBread from '../components/UI/ButtonBread';
+import GoalsSection from '../components/Main/GoalsSection/GoalsSection';
 
 // type Props = {
 //   onClick: () => void,
@@ -48,7 +49,7 @@ function App() {
   }
 
   return (
-    <div className='w-full h-96'>
+    <div className='w-full h-96 cursor-default'>
 
       {/* container */}
       <div className='container mx-auto px-4 3xl:px-10 flex-col'>
@@ -67,8 +68,8 @@ function App() {
           <div className='3xl:grow 3xl:px-96 3xl:text-3xl flex text-lg justify-between items-center w-[725px] h-7'>
             <a href="#mission"><button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Наша миссия</button></a>
             <a href="#how_it_works"><button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Принцип работы</button></a>
-            <a href=""><button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Дорожная карта</button></a>
-            <a href=""><button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Сообщество</button></a>
+            <a href="#roadmap"><button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Дорожная карта</button></a>
+            <a href="#community"><button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>Сообщество</button></a>
             <a href=""><button className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>FAQ</button></a>
           </div>
           {/* end menu */}
@@ -179,6 +180,7 @@ function App() {
 				<div className='container mx-auto px-4 3xl:px-10'>					
 					<NFTSection />
 					<NewsSection />
+					<GoalsSection />
 				</div>
 				{/* end container */}
     </div>
