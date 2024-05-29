@@ -10,7 +10,7 @@ interface NewsItemProps {
 const NewsItem: React.FC<NewsItemProps> = ({image, header, article, date}) => {
 	return (
 		<div className='flex dark:text-white justify-around gap-x-12 mt-10'>
-			<img src={image} alt="" className='min-w-[365px] w-[365px] xl:w-[420px] h-[250px] rounded-xl'/>
+			<img src={image} alt="" className='min-w-[365px] w-[365px] xl:min-w-[365px] xl:w-[420px] h-[250px] rounded-xl'/>
 			<div className='flex flex-col justify-between'>
 				<div>
 					<h3 className='font-sans font-semibold text-[26px] dark:text-white text-black-80'>
