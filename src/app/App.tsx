@@ -21,6 +21,7 @@ import HowItWorksSection from '../components/Main/HowItWorksSection/HowItWorksSe
 import ButtonBread from '../components/UI/ButtonBread';
 import GoalsSection from '../components/Main/GoalsSection/GoalsSection';
 import MissionSection from '../components/Main/MissionSection/MissionSection';
+import FAQSection from '../components/Main/FAQSection/FAQSection';
 
 // type Props = {
 //   onClick: () => void,
@@ -167,6 +168,7 @@ function App() {
 					<NFTSection />
 					<NewsSection />
 					<GoalsSection />
+					<FAQSection />
 				</div>
 				{/* end container */}
     </div>
