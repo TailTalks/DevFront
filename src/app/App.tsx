@@ -22,6 +22,7 @@ import ButtonBread from '../components/UI/ButtonBread';
 import GoalsSection from '../components/Main/GoalsSection/GoalsSection';
 import MissionSection from '../components/Main/MissionSection/MissionSection';
 import FAQSection from '../components/Main/FAQSection/FAQSection';
+import PreRegistrationSection from '../components/Main/PreRegistrationSection/PreRegistrationSection';
 
 // type Props = {
 //   onClick: () => void,
@@ -171,6 +172,7 @@ function App() {
 					<FAQSection />
 				</div>
 				{/* end container */}
+				<PreRegistrationSection />
     </div>
   );
 }
