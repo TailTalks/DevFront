@@ -22,7 +22,7 @@ const RoadMapSection: React.FC<RoadMapSectionProps> = ({theme}) => {
 					<img className='absolute left-[100px] top-[-15px]' src={theme? roadmapStarGraySm : roadmapStarBreadSm} alt="" />
 					<img className='absolute left-[150px] top-[0px]' src={roadmapStarBread} alt="" />
 					{theme && <img className='absolute left-[870px] xl:left-[1100px] top-[-20px]' src={roadmapStarWhiteSm} alt="" />}
-					{theme && <img className='absolute left-[1055px] xl:left-[1265px] top-[55px]' src={roadmapStarGrayMd} alt="" />}
+					{theme && <img className='absolute left-[935px] xl:left-[1265px] top-[55px]' src={roadmapStarGrayMd} alt="" />}
 					{!theme && <img className='absolute left-[905px] xl:left-[1050px] top-[-40px] w-[78px] h-[78px]' src={roadmapSunFull} alt="" />}
 					{!theme && <img className='absolute left-[1035px] xl:left-[1200px] top-[30px] w-[95px] h-[95px]' src={roadmapSunFull} alt="" />}
 					{!theme && <img className='absolute left-[1000px] xl:left-[1170px] top-[-80px] w-[90px] h-[90px]' src={roadmapSunThin} alt="" />}
