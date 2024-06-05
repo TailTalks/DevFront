@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+import { preloadImage } from '../../helpers/imagePreloader';
 import GoalsName from './GoalsName';
 import Goal from './Goal';
 import goalPic_1 from '../../../assets/pictures/main/goals/goal-1.jpg'
@@ -36,9 +37,29 @@ const goalsBody = [
 	{id: '8', url:`${goalPic_8}`, text:'Организуем акции и сборы средств для поддержки бездомных и больных животных, способствуя созданию заботливого сообщества.'},
 ]
 
+const imageList = [
+	`${goalPic_1}`,
+	`${goalPic_2}`,
+	`${goalPic_3}`,
+	`${goalPic_4}`,
+	`${goalPic_5}`,
+	`${goalPic_6}`,
+	`${goalPic_7}`,
+	`${goalPic_8}`,
+]
+
 const GoalsSection: React.FC<GoalsSectionProps> = () => {
 
 	const [show, setShow] = useState('');
+
+	useEffect(() => {
+    const preload = async () => {
+      const promises = imageList.map((src) => preloadImage(src));
+      await Promise.all(promises);
+    };
+
+    preload();
+  }, [imageList]);
 	
 	return (
 		<div className='mt-[140px] flex items-center justify-around'>
