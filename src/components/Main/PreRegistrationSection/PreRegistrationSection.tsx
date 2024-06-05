@@ -1,25 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ButtonBread from '../../UI/ButtonBread';
-import Modal from 'react-modal';
-import PreRegistration from '../../PreRegistration/PreRegistration';
 import dogWithToy1440 from '../../../assets/pictures/main/dog_with_toy_1440.jpg'
 import dogWithToy1024 from '../../../assets/pictures/main/dog_with_toy_1024.jpg'
 
 interface PreRegistrationSectionProps {
-	
+	clickHandler: () => void
 }
 
-const PreRegistrationSection: React.FC<PreRegistrationSectionProps> = () => {
-
-	const [preRegistration, setPreRegistration] = useState(false);
-
-	const openPreRegistration = () => {
-		setPreRegistration(true);
-	};
-	
-	const closePreRegistration = () => {
-		setPreRegistration(false);
-	}; 
+const PreRegistrationSection: React.FC<PreRegistrationSectionProps> = ({clickHandler}) => {
 
 	return (
 		<div>
@@ -51,12 +39,9 @@ const PreRegistrationSection: React.FC<PreRegistrationSectionProps> = () => {
 				<p className='font-Rubic variable font-light text-[18px] xl:text-xl dark:text-[#F3F3F3] text-[#4D4D4D] mt-[20px]'>
 					Не упусти шанс получить премиум-доступ к новой социальной сети для домашних животных
 				</p>
-				<ButtonBread name='Предварительная регистрация' onClick={openPreRegistration} />
+				<ButtonBread name='Предварительная регистрация' onClick={clickHandler} />
 				</div>
 			</div>
-			<Modal className='bg-slate-200/50 w-full h-full flex justify-center items-center' isOpen={preRegistration} onRequestClose={closePreRegistration}>
-					<PreRegistration closeModal={closePreRegistration} />
-			</Modal>
 		</div>
 	);
 };
