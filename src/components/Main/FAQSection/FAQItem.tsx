@@ -1,13 +1,23 @@
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect, createRef} from 'react';
 
 interface FAQItemProps {
 	question: string,
-	answer: string,
+	answer: Array<string>,
 }
 
 const FAQItem: React.FC<FAQItemProps> = ({question, answer}) => {
 
-	const [isAnswerShown, setIsAnswerShown] = useState(false);
+	const [isAnswerShown, setIsAnswerShown] = useState(true);
+	const [answerHeight, setAnswerHeight] = useState(0);
+
+	const answerEl = useRef<HTMLInputElement>(null);
+
+	useEffect(() => {
+		// const height = answerEl?.current?.getBoundingClientRect().height;
+		// if (height) 
+		// 	setAnswerHeight(Math.floor(height));
+		setIsAnswerShown(false);
+	}, [])
 
 	return (
 		<div>
@@ -27,10 +37,13 @@ const FAQItem: React.FC<FAQItemProps> = ({question, answer}) => {
 						</svg> }
 				</div>
 			</div>
-			<div className={isAnswerShown ? 'scale-y-100 duration-700 h-[100px] flex items-center' : 'scale-y-0 duration-700 h-[0px]'}>
-				<p className=' dark:text-white font-Rubic variable text-xl font-light px-[35px]'>
-					{answer}
-				</p>
+			<div style={{ height: isAnswerShown? answerEl.current?.offsetHeight || 0 : 0 }}
+        className="overflow-y-hidden transition-all duration-700" 
+			>
+				<div ref={answerEl} className=' dark:text-white font-Rubic variable text-xl font-light px-[35px] my-[30px]'>
+					{answer.map(ans => 
+						<p key={Math.random()} className='my-5'>{ans}</p>)}
+				</div>
 			</div>
 		</div>
 	);
