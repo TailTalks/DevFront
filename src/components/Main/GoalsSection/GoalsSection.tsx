@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { preloadImage } from '../../helpers/imagePreloader';
+import { preloadImage } from '../../../helpers/imagePreloader';
 import GoalsName from './GoalsName';
 import Goal from './Goal';
 import goalPic_1 from '../../../assets/pictures/main/goals/goal-1.jpg'
@@ -12,7 +12,7 @@ import goalPic_7 from '../../../assets/pictures/main/goals/goal-7.jpg'
 import goalPic_8 from '../../../assets/pictures/main/goals/goal-8.jpg'
 
 interface GoalsSectionProps {
-	
+
 }
 
 const goalsNames = [
@@ -60,7 +60,7 @@ const GoalsSection: React.FC<GoalsSectionProps> = () => {
 
     preload();
   }, [imageList]);
-	
+
 	return (
 		<div className='mt-[140px] flex items-center justify-around'>
 			<div>
@@ -81,7 +81,7 @@ const GoalsSection: React.FC<GoalsSectionProps> = () => {
 				</div>
 			</div>
 			<div className='w-[453px] h-[404px]'>
-				{show && goalsBody.filter(goal => goal.id === show).map((g => 
+				{show && goalsBody.filter(goal => goal.id === show).map((g =>
 					<Goal key={g.id} pictureURL={g.url} text={g.text} />))}
 			</div>
 		</div>
