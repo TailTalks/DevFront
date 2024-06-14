@@ -14,6 +14,7 @@ import RoadMapSection from '../components/Main/RoadMapSection/RoadMapSection'
 import NFTSection from '../components/Main/NFTSection/NFTSection'
 import GoalsSection from '../components/Main/GoalsSection/GoalsSection'
 import NewsSection from '../components/Main/NewsSection/NewsSection'
+import Feedback from '../components/Main/Feedback'
 import FAQSection from '../components/Main/FAQSection/FAQSection'
 import PreRegistrationSection from '../components/Main/PreRegistrationSection/PreRegistrationSection'
 
@@ -49,6 +50,7 @@ export default function Main() {
         <NFTSection />
         <NewsSection />
         <GoalsSection />
+        <Feedback />
         <FAQSection />
       </div>
       <PreRegistrationSection clickHandler={openPreRegistration} />
