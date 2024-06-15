@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import ButtonBread from '../../UI/ButtonBread'
-import feedbackPng from '../../../assets/png/feedback/feedback.png'
 import FormSubmitSuccess from '../../modals/FormSubmitSuccess'
 import { validateInputString } from '../../../helpers/validateInputString'
+import SvgSmallFeedback from './SvgSmallFeedback'
+
+// Image
+import cat from '../../../assets/png/feedback/catFB.png' // У кота сломаный svg
+import ellipse from '../../../assets/svg/feedback/Ellipse.svg'
+import starColor from '../../../assets/svg/feedback/StarColor.svg'
+import starGray from '../../../assets/svg/feedback/StarGray.svg'
+import starPlain from '../../../assets/svg/feedback/StarPlain.svg'
 
 export default function Feedback() {
   const [username, setUsername] = useState('')
@@ -56,8 +63,8 @@ export default function Feedback() {
       <h3 className='font-sans dark:text-white sm:dark:text-black-80 sm:text-black-80 font-medium text-[30px] sm:text-[34px] sm:text-left text-center'>
         Свяжитесь с нами
       </h3>
-      <div className='flex flex-col md:flex-row justify-between w-full gap-[1rem] md:gap-[2.25rem] mt-[1.094rem] sm:mt-[2.188rem]'>
-        <div className='flex flex-col md:w-[55%]'>
+      <div className='flex flex-col lg:flex-row justify-between w-full gap-[1rem] md:gap-[2.25rem] mt-[1.094rem] sm:mt-[2.188rem]'>
+        <div className='flex flex-col lg:w-[55%]'>
           <form className='flex flex-col' onSubmit={handleSubmit}>
             <label htmlFor='name' className='font-Rubic hidden sm:block'>ФИО</label>
             <input
@@ -98,10 +105,18 @@ export default function Feedback() {
           <p className='mt-[0.625rem] text-center text-[12px] font-Rubic text-[#7B8694]'>Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных</p>
         </div>
 
-        <div className='md:w-[45%]'>
-          <img src={feedbackPng} alt="feedback cat" /> {/* TODO change to svg */}
+        <div className='hidden lg:flex lg:w-[45%] relative justify-center items-center'>
+          <img src={ellipse} alt="ellipse" className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2' /> {/*Средняя эллипса*/}
+          <img src={ellipse} alt="ellipse" className='absolute top-[calc(50%-1.5rem)] left-1/2 transform -translate-x-1/2 -translate-y-1/2' /> {/*Верхняя эллипса*/}
+          <img src={ellipse} alt="ellipse" className='absolute top-[calc(50%+1.5rem)] left-1/2 transform -translate-x-1/2 -translate-y-1/2' /> {/*Нижняя эллипса*/}
+          <img src={cat} alt='catFB' className='absolute top-[calc(50%-1.1rem)] left-[calc(50%-8rem)] transform -translate-x-1/2 -translate-y-1/2' /> {/*Котик*/}
+          <img src={starColor} alt='starColor' className='absolute top-[calc(50%+8.2rem)] left-[calc(50%-3rem)] transform -translate-x-1/2 -translate-y-1/2' /> {/*Звезда цветная*/}
+          <img src={starGray} alt='starGray' className='absolute top-[calc(50%+1.77rem)] left-[calc(50%+6.4rem)] transform -translate-x-1/2 -translate-y-1/2' /> {/*Звезда серая*/}
+          <img src={starPlain} alt='starPlain' className='absolute top-[calc(50%-7.2rem)] left-[calc(50%+4.5rem)] transform -translate-x-1/2 -translate-y-1/2' /> {/*Звезда простоя*/}
         </div>
       </div>
+
+      <SvgSmallFeedback /> {/*SVG для маленьких экранов*/}
 
       <FormSubmitSuccess isOpen={isModalOpen} closeModal={handleCloseModal} />
     </section>
