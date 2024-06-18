@@ -3,10 +3,6 @@
 import React from 'react'
 import '@fontsource-variable/rubik'
 import './App.css'
-// import Love from '../assets/Love.svg'
-// import Share from '../assets/Share.svg'
-// import Play from '../assets/Play.svg'
-// import Maps from '../assets/Maps.svg'
 import Header from '../components/Header'
 import Prew from '../components/Main/Prew'
 import Main from '../pages/Main' // then we will need to create a router and pass it to the app

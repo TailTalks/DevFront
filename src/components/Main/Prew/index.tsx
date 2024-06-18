@@ -3,6 +3,10 @@ import { useTheme } from '../../../context/ThemeContext'
 import illustrationDark from '../../../assets/IllustrationDark.svg'
 import illustrationLight from '../../../assets/IllustrationLight.svg'
 import ButtonBread from '../../UI/ButtonBread'
+// import Love from '../../../assets/Love.svg'
+// import Share from '../../../assets/Share.svg'
+// import Play from '../../../assets/Play.svg'
+// import Maps from '../../../assets/Maps.svg'
 
 export default function Prew() {
   const { theme } = useTheme() //for example, as a theme switch and then a navbar

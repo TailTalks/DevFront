@@ -22,7 +22,7 @@ export default function FormSubmitSuccess({ isOpen, closeModal }: FormSubmitSucc
         <div className=" bg-white rounded-[15px] px-6 py-4 sm:bg-transparent flex flex-col items-center" >
           <div className="relative w-24 h-24 flex justify-center items-center">
             <img src={Circle} alt="Circle" className="absolute" /> {/* Есть небольше несоответствии с макетом */}
-            <img src={Check} alt="Check" className="w-12 h-12" />
+            <img src={Check} alt="Check"/>
           </div>
           <p className="mb-4 mt-4 text-center text-[1.25rem] text-black-80 sm:text-[#F3F3F3]">Форма успешно отправлена!</p>
         </div>
