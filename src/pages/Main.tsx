@@ -6,6 +6,7 @@ import PreRegistration from '../components/PreRegistration/PreRegistration'
 import { useTheme } from '../context/ThemeContext'
 
 // import sections
+import Prew from '../components/Main/Prew'
 import MissionSection from '../components/Main/MissionSection/MissionSection'
 import HowItWorksSection from '../components/Main/HowItWorksSection/HowItWorksSection'
 import CommunitySection from '../components/Main/CommunitySection/CommunitySection'
@@ -36,6 +37,7 @@ export default function Main() {
 
   return (
     <main>
+      <Prew />
       <div className='container mx-auto px-4 3xl:px-10 flex-col'>
         <MissionSection />
       </div>

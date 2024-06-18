@@ -27,22 +27,22 @@ module.exports = {
     },
     extend: {
 			backgroundImage: {
-        'step-1': 
+        'step-1':
 					"linear-gradient(to bottom, rgba(25, 25, 25, 0), rgba(25, 25, 25, 0), rgba(25, 25, 25, 1)), url('assets/pictures/main/step1pic.jpg')",
-				'step-2': 
+				'step-2':
 					"linear-gradient(to bottom, rgba(25, 25, 25, 0), rgba(25, 25, 25, 0), rgba(25, 25, 25, 1)), url('assets/pictures/main/step2pic.jpg')",
-				'step-3': 
+				'step-3':
 					"linear-gradient(to bottom, rgba(25, 25, 25, 0), rgba(25, 25, 25, 0), rgba(25, 25, 25, 1)), url('assets/pictures/main/step3pic.jpg')",
-				'step-4': 
+				'step-4':
 					"linear-gradient(to bottom, rgba(25, 25, 25, 0), rgba(25, 25, 25, 0), rgba(25, 25, 25, 1)), url('assets/pictures/main/step4pic.jpg')",
-				'step-5': 
+				'step-5':
 					"linear-gradient(to bottom, rgba(25, 25, 25, 0), rgba(25, 25, 25, 0), rgba(25, 25, 25, 1)), url('assets/pictures/main/step5pic.jpg')",
 				'bread':
 					"linear-gradient(to bottom left, rgba(255, 174, 78, 1), rgba(255, 76, 140, 1))",
 				'counterDog':
 					"url('assets/counterDog.png')",
 				'roadmap-stars':
-					"url('assets/backgrounds/roadmap-background-stars.png')"
+					"url('assets/png/backgrounds/roadmap-background-stars.png')"
       },
       colors: {
         black: {
