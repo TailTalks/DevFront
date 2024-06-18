@@ -82,7 +82,7 @@ export default function Feedback() {
               name='email'
               type='email'
               autoComplete='email'
-              placeholder={isSmallScreen ? 'Email' : 'Адрес эл почть'}
+              placeholder={isSmallScreen ? 'Email' : 'Адрес электронной почты'}
               className='border dark:border-white sm:dark:border-black-80 border-black-80 px-[1.563rem] py-[1.094rem] rounded-xl mt-[1.094rem] sm:mt-[0.625rem] dark:bg-transparent sm:dark:bg-[#F3F3F3] dark:text-white  sm:dark:text-black-80'
               value={email}
               onChange={handleEmailChange} />
