@@ -1,8 +1,4 @@
-// It would be a good idea to also upload a preview here, but oh well
-
-import React, { useState } from 'react'
-import Modal from 'react-modal'
-import PreRegistration from '../components/PreRegistration/PreRegistration'
+import React from 'react'
 import { useTheme } from '../context/ThemeContext'
 
 // import sections
@@ -10,30 +6,17 @@ import Preview from '../components/Main/Preview'
 import Mission from '../components/Main/Mission'
 import HowItWorksSection from '../components/Main/HowItWorksSection/HowItWorksSection'
 import CommunitySection from '../components/Main/CommunitySection/CommunitySection'
-import CounterSection from '../components/Main/CounterSection/CounterSection'
+import Counter from '../components/Main/Counter'
 import RoadMapSection from '../components/Main/RoadMapSection/RoadMapSection'
 import NFTSection from '../components/Main/NFTSection/NFTSection'
 import GoalsSection from '../components/Main/GoalsSection/GoalsSection'
 import NewsSection from '../components/Main/NewsSection/NewsSection'
 import Feedback from '../components/Main/Feedback'
 import FAQSection from '../components/Main/FAQSection/FAQSection'
-import PreRegistrationSection from '../components/Main/PreRegistrationSection/PreRegistrationSection'
-
-Modal.setAppElement('#root')
-
+import PreRegistration from '../components/Main/PreRegistration'
 
 export default function Main() {
-
-  const [preRegistration, setPreRegistration] = useState(false)
   const { theme } = useTheme()
-
-  const openPreRegistration = () => {
-    setPreRegistration(true)
-  }
-
-  const closePreRegistration = () => {
-    setPreRegistration(false)
-  }
 
   return (
     <main>
@@ -45,7 +28,7 @@ export default function Main() {
       <div className='container mx-auto px-4 3xl:px-10 flex-col'>
         <CommunitySection />
       </div>
-      <CounterSection clickHandler={openPreRegistration} />
+      <Counter />
       <RoadMapSection theme={theme} />
 
       <div className='container mx-auto px-4 3xl:px-10'>
@@ -55,12 +38,8 @@ export default function Main() {
         <Feedback />
         <FAQSection />
       </div>
-      <PreRegistrationSection clickHandler={openPreRegistration} />
+      <PreRegistration />
 
-
-      <Modal className='bg-slate-200/50 w-full h-full flex justify-center items-center' isOpen={preRegistration} onRequestClose={closePreRegistration}>
-        <PreRegistration closeModal={closePreRegistration} />
-      </Modal>
     </main>
   )
 }

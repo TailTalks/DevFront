@@ -1,18 +1,20 @@
-import React from 'react';
-import ButtonBread from '../../UI/ButtonBread';
+import React, { useState } from 'react'
+import ButtonBread from '../../UI/ButtonBread'
+import PreRegistrationModal from '../../modals/PreRegistrationModal'
 
-interface CounterSectionProps {
-	clickHandler: () => void
-}
 
-const CounterSection: React.FC<CounterSectionProps> = ({clickHandler}) => {
+export default function Counter() {
+	const [isModalOpen, setIsModalOpen] = useState(false)
+
+	const openModal = () => setIsModalOpen(true)
+	const closeModal = () => setIsModalOpen(false)
 
 	return (
-		<div>
+		<section className='counter'>
 			<div className='xl:container mx-auto h-[570px] xl:h-[770px] bg-[#F3F3F3] xl:rounded-3xl bg-counterDog bg-contain bg-left bg-no-repeat mt-[100px] xl:mt-[140px] flex justify-end 3xl:justify-center'>
 					<div className='w-[530px] xl:w-[670px] h-[500px] flex flex-col items-center mt-[70px] xl:mt-[134px] mb-[136px] mr-[90px] xl:mr-[110px]'>
 						<h3 className='font-sans text-[#000000] text-2xl xl:text-[34px] text-center leading-[36px] xl:leading-[50px] font-medium'>
-						Отсчет времени до запуска нашей социальной сети 
+						Отсчет времени до запуска нашей социальной сети
 						<span className='bg-clip-text text-transparent bg-bread'> Tail Talks </span> начался!
 						</h3>
 						<p className='font-Rubik Variable font-light text-lg xl:text-xl text-[#717171] mt-[25px] text-center xl:px-10'>
@@ -36,11 +38,11 @@ const CounterSection: React.FC<CounterSectionProps> = ({clickHandler}) => {
 								<span className='font-Rubik Variable font-light text-base'>секунды</span>
 							</div>
 						</div>
-						<ButtonBread name='Предварительная регистрация' onClick={clickHandler} />
+						<ButtonBread name='Предварительная регистрация' onClick={openModal} />
 					</div>
 				</div>
-		</div>
-	);
-};
 
-export default CounterSection;
+				<PreRegistrationModal isOpen={isModalOpen} closeModal={closeModal} />
+		</section>
+	)
+}
