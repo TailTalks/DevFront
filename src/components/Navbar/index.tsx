@@ -7,32 +7,35 @@ export default function Navbar() {
 
   const { theme, toggleTheme } = useTheme()
 
+  // links style
+  const linksStyle = 'font-Rubik Variable text-[#000000] dark:text-white font-medium'
+
   return (
     <>
       <div className='3xl:grow 3xl:px-96 3xl:text-3xl flex text-lg justify-between items-center w-[725px] h-7'>
         <a
           href="#mission"
-          className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>
+          className={linksStyle}>
           Наша миссия
         </a>
         <a
         href="#how_it_works"
-        className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>
+        className={linksStyle}>
           Принцип работы
           </a>
         <a
         href="#roadmap"
-        className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>
+        className={linksStyle}>
           Дорожная карта
           </a>
         <a
         href="#community"
-        className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>
+        className={linksStyle}>
           Сообщество
           </a>
         <a
-        href=""
-        className='font-Rubik Variable text-[#000000] dark:text-white font-medium'>
+        href="#faq"
+        className={linksStyle}>
           FAQ
           </a>
       </div>

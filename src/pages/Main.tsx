@@ -6,8 +6,8 @@ import PreRegistration from '../components/PreRegistration/PreRegistration'
 import { useTheme } from '../context/ThemeContext'
 
 // import sections
-import Prew from '../components/Main/Prew'
-import MissionSection from '../components/Main/MissionSection/MissionSection'
+import Preview from '../components/Main/Preview'
+import Mission from '../components/Main/Mission'
 import HowItWorksSection from '../components/Main/HowItWorksSection/HowItWorksSection'
 import CommunitySection from '../components/Main/CommunitySection/CommunitySection'
 import CounterSection from '../components/Main/CounterSection/CounterSection'
@@ -37,9 +37,9 @@ export default function Main() {
 
   return (
     <main>
-      <Prew />
+      <Preview />
       <div className='container mx-auto px-4 3xl:px-10 flex-col'>
-        <MissionSection />
+        <Mission />
       </div>
       <HowItWorksSection theme={theme} />
       <div className='container mx-auto px-4 3xl:px-10 flex-col'>
