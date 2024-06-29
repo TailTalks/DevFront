@@ -39,7 +39,6 @@ export default function Main() {
         <FAQSection />
       </div>
       <PreRegistration />
-
     </main>
   )
 }

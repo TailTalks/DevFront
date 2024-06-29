@@ -52,6 +52,18 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-gradient': {
+          background: "linear-gradient(to top right, #FF4C8C, #FFAE4E)",
+          '-webkit-background-clip': 'text',
+          '-webkit-text-fill-color': 'transparent',
+          display: 'inline-block',
+        },
+      };
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
   darkMode: "class",
 };
